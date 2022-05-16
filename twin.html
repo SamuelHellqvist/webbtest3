@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        padding: 0%;
+        margin: 0;
+        border: 1px, red;
+    }
+    *{
+        transition-timing-function: 1s, ease-in-out;
+    }
+    
+    body{
+        overflow: hidden;
+    }
+    
+    #main{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #top{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: 100%;
+        width: 75%;
+        background-color: tomato;
+        transform: rotate(0deg);
+    }
+    
+    header{
+        position: absolute;
+        left: 20%;
+        top: 10%;
+        font-size: 4rem;
+        width: 50%;
+        height: 12%;
+        background-color: beige;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    nav{
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        background-color: beige;
+    }
+    nav a{
+        color: black;
+        font-family: serif;
+    }
+    nav a:hover{
+        color: blue;
+    }
+    
+    #bot{
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        background-color: beige;
+        left: 10%;
+        top: 28%;
+        transform: rotate(-5deg);
+    }
+    
+    #side{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        position: absolute;
+        background-color: lightgray;
+        width: 25%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+    #sidetitle{
+        grid-column: 1;
+        grid-row: 1;
+        width: 1fr;
+        height: 1fr;
+        background-color: lightgray;
+        text-align: center;
+    }
+    #sidetitle h1{
+        padding-top: 8%;
+    }
+    .post{
+        position: relative;
+        width: 94%;
+        height: 90%;
+        background-color: lightgoldenrodyellow;
+        margin-left: 3%;
+        margin-bottom: 2%;
+        justify-content: center;
+        transition:all 0.5s ease-in-out
+    }
+    .post img{
+        position: absolute;
+        height: 82.5%;
+        right: 50%;
+        transform: translate(50%);
+        top: 2.6%;
+    }
+    .post p{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 11%;
+        bottom: 2%;
+        opacity: 100;
+    }
+    .post p a{
+        color: blue;
+    }
+    .post:hover{
+        width: 97%;
+        height: 97%;
+        opacity: 100;
+    }
+    
+    #container{
+        border: 2px solid black;
+        position: relative;
+        top: 37%;
+        left: 40%;
+        height: 0;
+        width: 600px;
+        height: 250px;
+        background-color: transparent;
+    }
+    
+    #Title{
+        position: absolute;
+        top: 0;
+        height: 41px;
+        width: 450px;
+        background-color: whitesmoke;
+        color: tomato;
+        padding: 6px;
+    }
+    
+    #cside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 250px;
+        width: 150px;
+        background-color: whitesmoke;
+        border-left: 2px solid black;
+    }
+    
+    #Text{
+        position: absolute;
+        background-color: whitesmoke;
+        height: 209px;
+        width: 450px;
+        bottom: 0;
+        color: grey;
+    }
+    #Text p {
+        padding: 7px;
+        margin-left: 12px;
+    }
+    
+    #cside img{
+        position: absolute;
+        top: 20%;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id ="top">
+            <nav></nav>
+            <header>In for the chill. </header>
+            <nav> 
+                <a href="index.html">Home</a>
+                <a href="index.html">Contact</a>
+                <a href="index.html">About</a>
+                <a href="index.html">Explore</a>                
+            </nav>
+        </div>
+
+        <div id="bot"></div>
+
+        <div id="side">
+            <div id="sidetitle">
+                <h1>continue chilling <br>
+                by checking out <br>
+                these posts:
+                </h1>
+            </div>
+            <div class="post" id="">
+                <img src="https://i.guim.co.uk/img/static/sys-images/Admin/BkFill/Default_image_group/2010/11/10/1289405887314/DJ-Screw-006.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=591d797bed42ce8b1f3bde558f7f70bf" alt="Dj Screw">
+                <p><a href="dj.html">Dj Screw - Wanna be a baller</a></p>
+            </div>
+            <div class="post" id="">
+                <img src="https://i.scdn.co/image/ab67616d0000b273d9a044b9ec1be8dc77f35717" alt="Louie Zong - Ghost Duet">
+                <p><a href="ghost.html">Louie Zong - Ghost Duet</a></p>
+            </div>
+        </div>
+
+        <div id="container">
+
+            <div id="Title">
+                <h1>Avril 14th</h1>
+            </div>
+    
+            <div id="Text">
+                <p>This song is played by some kind of piano-playback machine produced by Yamaha. It has a very special and nice melody. </p>
+            </div>
+    
+            <div id="cside">
+               <img src="data:image/png;base64,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" alt="A pic">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
